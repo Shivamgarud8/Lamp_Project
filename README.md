@@ -1,4 +1,4 @@
-# Lamp_Project
+# Lamp_Project base on Amazon Linux
 📁 LAMP Stack Project on Amazon Linux – lamp_project
 A fully functional LAMP (Linux, Apache, MySQL, PHP) stack project deployed on Amazon Linux 2023 EC2 instance. This web app is hosted on Apache, connected to a MySQL database, and supports user data input through a PHP form.
 
