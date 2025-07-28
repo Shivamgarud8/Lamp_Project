@@ -1,0 +1,33 @@
+📌 Step 1: Secure MySQL (Optional but Recommended)
+sudo mysql_secure_installation
+
+📌 Step 2: Login to MySQL
+sudo mysql -u root -p
+
+
+📌 Step 3: Create Database & Table
+-- Create your project database
+CREATE DATABASE lampdb;
+
+-- Switch to it
+USE lampdb;
+
+-- Create the table to store form data
+CREATE TABLE user_form (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    city VARCHAR(50),
+    age INT,
+    dept VARCHAR(50),
+    submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+✅ View Data in MySQL
+After form submission, you can view records with:
+
+
+sudo mysql -u root -p
+USE lampdb;
+SELECT * FROM user_form;
